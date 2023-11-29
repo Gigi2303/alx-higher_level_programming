@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-def print_last_digit(number):
-    if number < 0:
-        lam = (-number % 10)
-    elif number >= 0:
-        lam = number % 10
-    print("{:d}".format(lam), end="")
-    return lam
 
+def print_last_digit(number):
+
+    if number < 0:
+        number = number * (-1)
+        lama = (number % 10)
+    print("{}".format(lama), end="")
+    return (lama)
