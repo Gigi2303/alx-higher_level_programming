@@ -19,4 +19,4 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
-    print("{:d} {:s} {:d} = {:d}".format(a, op, b, dic[op](a, b)))
+    print("{:d} {:s} {:d} = {:d}".format(a, tt, b, dic[tt](a, b)))
