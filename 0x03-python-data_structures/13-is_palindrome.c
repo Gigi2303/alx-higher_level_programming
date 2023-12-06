@@ -74,7 +74,7 @@ int is_palindrome(listint_t **head)
 	while (curr != NULL)
 	{
 		arr1[g] = curr->n;
-		current = curr->next;
+		curr = curr->next;
 		g++;
 	}
 	/* loop through the arr1 from the end and save in arr2 */
