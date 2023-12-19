@@ -3,7 +3,7 @@
 def safe_print_list_integers(my_list=[], x=0):
     printed_integer = 0
     
-    for bufa in my_list[:x]:
+    for bufa in range(x):
         try:
             print("{:d}".format(bufa), end="")
 
