@@ -1,16 +1,12 @@
 #!/usr/bin/python3
 
 def safe_print_list_integers(my_list=[], x=0):
-    printed_integer = 0
-    
-    for bufa in range(x):
+    rack = 0
+    for atg in range(x):
         try:
-            print("{:d}".format(my_list[bufa]), end="")
-
+            print("{:d}".format(my_list[atg]), end="")
         except (ValueError, TypeError):
             continue
-        printed_integer += 1
-
+        rack += 1
     print("")
-
-    return printed_integer
+    return rack
