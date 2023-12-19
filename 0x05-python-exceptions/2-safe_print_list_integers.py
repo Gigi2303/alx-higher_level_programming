@@ -5,11 +5,11 @@ def safe_print_list_integers(my_list=[], x=0):
     
     try:
         for bufa in my_list[:x]:
-            print("{:d}".format(bufa), end=" ")
-            printed_integer += 1
+            print("{:d}".format(bufa), end="")
 
-        except (IndexError, ValueError, TypeError):
-            pass
+        except (ValueError, TypeError):
+            continue
+        printed_integer += 1
 
         print("")
 
