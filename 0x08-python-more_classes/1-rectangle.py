@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 """
-This is a module that contains a class that defines a Rectangle with
-private attribute width.
+This module contains a class which defines a Rectangle with
+private attribute width
 """
 
 class Rectangle:
@@ -25,20 +25,21 @@ class Rectangle:
             width: The width of the rectangle
             height: The height of the rectangle
         """
-        self._width = width
-        self._height = height
+        self.width = width
+        self.height = height
+
 
     @property
     def width(self):
-         """This method retrieves the width of the rectangle
+        """This method retrieves the width of the rectangle
 
         Return: The width
         """
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
-        """This is a method that set the new value of the width
+        """This method set the new value of the width
 
         Args:
             value: The new width
@@ -52,19 +53,19 @@ class Rectangle:
             if value < 0:
                 raise ValueError("width must be >= 0")
             else:
-                self._width = value
+                self.__width = value
 
     @property
     def height(self):
-        """This is a method that retrieves the height of the rectangle
+        """This method retrieves the height of the rectangle
 
         Return: The height
         """
-        return self._height
+        return self.__height
 
     @height.setter
     def height(self, value):
-        """This is a method that set the new value of the height
+        """This method set the new value of the height
 
         Args:
             value: The new height
@@ -74,9 +75,8 @@ class Rectangle:
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-
-       else:
+        else:
             if value < 0:
                 raise ValueError("height must be >= 0")
             else:
-                self._height = value
+                self.__height = value
