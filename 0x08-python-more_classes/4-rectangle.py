@@ -1,24 +1,27 @@
 #!/usr/bin/python3
 
 """
-This module contains a class which defines a Rectangle with
+This module contains a class that defines a Rectangle with
 private attribute width
 
 """
 
+
 class Rectangle:
-    """This is a class that defines a rectangle
+    """This class defines a rectangle
 
     Attributes:
         width: The width of rectangle
         height: The height of rectangle
         __init__(self, width=0, height=0)
-
+        area: The rectangle area
+        perimeter: The rectangle perimeter
+        __str__: Print the rectangle
+        __repr__: Return string representation of the rectangle
     Raise:
         TypeError: width must be an integer
         ValueError: width must be >= 0
     """
-
     def __init__(self, width=0, height=0):
         """This method initializes the class instance
 
@@ -28,7 +31,6 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-
 
     @property
     def width(self):
@@ -81,3 +83,24 @@ class Rectangle:
                 raise ValueError("height must be >= 0")
             else:
                 self.__height = value
+
+    def area(self):
+        """This returns the area of the rectangle"""
+        return (self.__width * self.__height)
+
+    def perimeter(self):
+        """This returns the perimeter of the rectangle"""
+        return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """This prints the rectangle"""
+
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        display = '\n'.join(["#" * self.__width for g in range(self.__iheight)])
+
+        return display
+
+    def __repr__(self):
+        """Return string representation of the rectangle"""
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
