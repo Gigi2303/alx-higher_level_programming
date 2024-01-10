@@ -10,6 +10,8 @@ def write_file(filename="", text=""):
     Argument:
             filename - The name of the file to write in
             text - The text to be written
+    Returns:
+            int: number of characters written
     """
     with open(filename, "w", encoding="UTF8") as g:
         numb = g.write(text)
