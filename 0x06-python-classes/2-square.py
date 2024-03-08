@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""This module Write a class Square that defines a square by
+Instantiation with optional size
+"""
 class Square():
         """This class defines a square with private instance size"""
         def __init__(self, size=0):

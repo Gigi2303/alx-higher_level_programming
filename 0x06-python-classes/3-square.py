@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""This module  defines a square  by a private instance size
+and public instance method Area
 
+"""
 class Square():
             """This class defines a square with private instance size"""
         def __init__(self, size=0):

@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""This module defines a square byPrivate instance attribute: size
+    property def size(self): to retrieve it and
+    property setter def size(self, value): to set it
+"""
 
 class Square():
                 """This class defines a square with private instance size"""
