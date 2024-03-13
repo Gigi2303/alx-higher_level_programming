@@ -1,1 +1,1 @@
-0x12-javascript-warm_up Tasks
+0x12-javascript-warm_up
